@@ -13,8 +13,7 @@ export default function Searchbar() {
 
   useEffect(() => {
     setSearch(q || '');
-  }),
-    [q];
+  }, [q]);
 
   const onChangeSearch = (e) => {
     setSearch(e.target.value);
